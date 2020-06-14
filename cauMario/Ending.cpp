@@ -145,7 +145,7 @@ void Ending_main() {
 
     marioPeach = createObject(endingAnimationImage1[0], endingScene, marioPeachX, marioPeachY, true, 1.0f);
     clearText = createObject(endingAnimationImage3[0], endingScene, textX, textY , false, 1.0f);
-    goTitleButton = createObject("image/Ending/goTitle.png", endingScene, 460, 75, false, 0.7f);
+    goTitleButton = createObject("image/Ending/exit.png", endingScene, 535, 75, false, 0.7f);
 
     marioPeachMoveTimer = createTimer(MARIO_PEACH_MOVE_TIME);
     textMoveTimer = createTimer(MARIO_PEACH_MOVE_TIME);
