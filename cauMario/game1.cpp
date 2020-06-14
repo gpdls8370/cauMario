@@ -23,7 +23,7 @@ SoundID bgm_g1,g1deadsound;
 extern int nowGameSceneNum,coin;
 
 int highscore_g1=0;
-
+int getCoin;
 
 
 int obj1x[6][10] = { 0 }, obj1y[6][10] = { 0 };
@@ -386,10 +386,12 @@ void score(){
 	//sprintf_s(buf, "버틴시간 : %0.f초\n", (9999-g1result), scene_g1);
 	//showMessage(buf);
 
-	sprintf_s(buf, "%d 코인 획득!\n", (int)(9999 - g1result) * 2, scene_g1);
+	getCoin = (int)(9999 - g1result) * 2;
+
+	sprintf_s(buf, "%d 코인 획득!\n", getCoin, scene_g1);
 	showMessage(buf);
 
-	coin += (int)(9999 - g1result) * 2;
+	coin += getCoin;
 
 }
 
@@ -406,15 +408,7 @@ void g1death() {
 				//savedata_g1();
 				showObject(g1restartbutton);
 			}
-			else if (g1c1x < 0- g1_character_size_x+1 || g1c1x > 1280 || g1c1y < 0- g1_character_size_y +1|| g1c1y > 720) {
-				stopTimer(g1timer1);
-				stopTimer(g1c1move);
-				stopTimer(g1difficult);
-				playSound(g1deadsound);
-				showMessage("out of bounds");
-				score();
-				showObject(g1restartbutton);
-			}
+			
 		}
 	}
 	for (int i = 0; i < g1difficulty; i++) {
@@ -534,7 +528,22 @@ void Game1_timerCallback(TimerID timer) {// 크리에이트 타이머!!!!!!!!!!!
 
 	}
 	if (timer == g1c1move) {//캐릭터움직이는거 전용
+	/*else if (g1c1x < 0 - g1_character_size_x + 1 || g1c1x > 1280 || g1c1y < 0 - g1_character_size_y + 1 || g1c1y > 720) {
+		stopTimer(g1timer1);
+		stopTimer(g1c1move);
+		stopTimer(g1difficult);
+		playSound(g1deadsound);
+		showMessage("out of bounds");
+		score();
+		showObject(g1restartbutton);
+	}*/
+		
 		g1c1x += g1dx; g1c1y += g1dy;
+
+		if (g1c1x < 0 + g1_character_size_x-40 + 1 || g1c1x > 1250 || g1c1y < 0 + g1_character_size_y -50 + 1 || g1c1y > 680){
+			g1c1x -= g1dx; g1c1y -= g1dy;
+		}
+
 		g1c1animation();
 		locateObject(g1c1, scene_g1, g1c1x, g1c1y);
 		setTimer(g1c1move, 0.01f);
@@ -605,10 +614,9 @@ void Game1_main() {
 	g1obj1firstposition();
 	g1obj1_1firstposition();
 
-	g1startbutton = g1createObject("image/game1/start.png", scene_g1, 500, 110, true);
-	g1restartbutton = g1createObject("image/game1/restart.png", scene_g1, 1000, 650, false);
-	scaleObject(g1startbutton, 0.5f);
-	scaleObject(g1restartbutton, 0.5f);
+	g1startbutton = g1createObject("image/game1/start.png", scene_g1, 520, 320, true);
+	g1restartbutton = g1createObject("image/game1/restart.png", scene_g1, 500, 330, false);
+
 
 	for (int i = 0; i < 10; i++) {
 		for (int j = 0; j < 6; j++) {

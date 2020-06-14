@@ -575,7 +575,11 @@ void Title_main() {
 				setObjectImage(GameEnterButton[i], "image/Title/enter.png");
 				locateObject(GameEnterButton[i], titleScene, 950, 100);
 
-				if (i == 4)
+				if (i == 3) {
+					setObjectImage(GameIcon[4], "image/Title/빨간아이콘.png");
+				}
+
+				if (i == 4 || i == 5)
 					locateObject(GameEnterButton[i], titleScene, 70, 100);
 			}
 		}
