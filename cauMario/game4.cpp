@@ -270,19 +270,7 @@ void g4flooranimation() {
         g4howfar = g4howfar + 11 + 2 * g4difficulty;
         g4score = g4howfar* 0.006;
     }
-    /*if (g4background1x < -2100) {
-        g4background1x = g4background2x + 2000;
 
-    }
-    if (g4background2x < -2100) {
-        g4background2x= g4background1x + 2000;
-
-    }
-    else {
-        g4background1x = g4background1x - 2;
-        g4background2x = g4background2x - 2;
-        
-    }*/
     
 }
 
@@ -306,6 +294,7 @@ void g4death() {
                 g4scoremessage();
                 showObject(g4restartbutton);
                 showObject(g4goMapButton);
+                hideObject(g4c1);
             }
             if (g4score > 25) {
                 if (g4score > 25 && g4score < 35) {
@@ -322,6 +311,7 @@ void g4death() {
                             g4scoremessage();
                             showObject(g4restartbutton);
                             showObject(g4goMapButton);
+                            hideObject(g4c1);
                         }
                     }
                 }
@@ -336,6 +326,7 @@ void g4death() {
                     g4scoremessage();
                     showObject(g4restartbutton);
                     showObject(g4goMapButton);
+                    hideObject(g4c1);
                 }
             }
             if (g4score > 60) {
@@ -350,6 +341,7 @@ void g4death() {
                     g4scoremessage();
                     showObject(g4restartbutton);
                     showObject(g4goMapButton);
+                    hideObject(g4c1);
                 }
             }
             if ((210 < (g4obj4x[i] + g4_obj4_size_width)) && (210 + g4_character_size_width > g4obj4x[i]) &&
@@ -361,8 +353,8 @@ void g4death() {
                 playSound(g1deadsound);
                 g4scoremessage();
                 showObject(g4restartbutton);
-            }
-            
+                hideObject(g4c1);
+            }  
         }
     
 }
@@ -403,7 +395,6 @@ void g4jump1_1() {
     
     if (jump1_1xcache >= 100 || jump1_1xcache < -100) {//계산 밖일때
         jump1_1xcache = -100;
-        //g4jumping1_1 = false;
         g4c1y = floor_y;
         g4jumping1_1 = false;
     }
@@ -418,7 +409,6 @@ void g4jump2_1(double g4c1positiony) {
     double g4c1ycache;
     if (jump2_1xcache >= 100 || jump2_1xcache < -100) {//계산 밖일때
         jump2_1xcache = -100;
-        //g4jumping1_1 = false;
         g4c1y = g4c1positiony;
         g4jumping2_1 = false;
         startTimer(g4timer1);
@@ -432,78 +422,6 @@ void g4jump2_1(double g4c1positiony) {
 
 }
 
-/*void g4jump1() {
-    
-    //점프중 = y감소
-    //점프끝 = y증가
-    if (g4isjumping1)
-    {
-        g4c1y += g4gravity;
-        locateObject(g4c1, scene_g4, 210, g4c1y);
-        setObjectImage(g4c1, g4c1jumpanimationfile[0]);
-    }
-    else
-    {
-        g4c1y -= g4gravity;
-        locateObject(g4c1, scene_g4, 210, g4c1y);
-        setObjectImage(g4c1, g4c1jumpanimationfile[2]);
-    }
-
-    //Y가 계속해서 증가하는걸 막기위해 바닥을 지정.
-    //Y가 증가한다는 것은 공룡이 아래로 내려온다는 뜻.
-    if (g4c1y < 110)
-    {
-        g4c1y = floor_y;
-        g4isBottom = true;
-        g4jumping1process = false;
-        g4jumping2process = false;
-        stopTimer(g4timer1);
-        g4c1jump1cache = -100;
-    }
-
-    //점프의 맨 위를 찍으면 점프가 끝난 상황
-    if (g4c1y > 110+ g4_character_jump_hight)
-    {
-        g4isjumping1 = false;        
-    }
-   
-}
-void g4jump2() {
-
-    //점프중 = y감소
-    //점프끝 = y증가
-    if (g4jumping2process) {
-        if (g4isjumping2)
-        {   g4c1y += g4gravity;
-            locateObject(g4c1, scene_g4, 210, g4c1y);
-            setObjectImage(g4c1, g4c1jumpanimationfile[1]);
-        }
-        else
-        {   g4c1y -= g4gravity;
-            locateObject(g4c1, scene_g4, 210, g4c1y);
-            setObjectImage(g4c1, g4c1jumpanimationfile[2]);
-            
-        }
-
-        //Y가 계속해서 증가하는걸 막기위해 바닥을 지정.
-        //Y가 증가한다는 것은 공룡이 아래로 내려온다는 뜻.
-        if (g4c1y < g4c1yjump2start - 1)
-        {
-            g4jumping2process = false;
-            stopTimer(g4timer2);
-            startTimer(g4timer1);
-            g4jumping1process = true;
-            g4isjumping1 = false;
-        }
-
-        //점프의 맨 위를 찍으면 점프가 끝난 상황
-        if (g4c1y > g4c1yjump2start + g4_character_jump_hight)
-        {
-            g4isjumping2 = false;
-        }        
-    }
-    
-}*/
 
 void g4placeobstacle(ObjectID obstacle, SceneID scene, int x, int y, bool shown) {
     if (shown) {
@@ -621,7 +539,7 @@ void g4objselectshow() {
 }
 
 void g4stageclear() {
-    if (g4score >= 100) {
+    if (g4score >= 70) {
         showObject(g4clear);
         stopSound(g4theme);
         playSound(g4clearsound);
@@ -631,7 +549,7 @@ void g4stageclear() {
         //showMessage("dead");
         stage2Clear = true;
         g4scoremessage();
-        showObject(g4restartbutton);
+        hideObject(g4c1);
         showObject(g4goMapButton);
     }
 }
@@ -689,19 +607,19 @@ void g4update() {
     locateObject(g4c1, scene_g4, 210, g4c1y);
 
 //-------난이도
-    if (g4score > 0 && g4score < 20) {
+    if (g4score > 0 && g4score < 5) {
         g4difficulty = 1;
     }
-    else if (g4score > 25 && g4score < 30) {
+    else if (g4score > 5 && g4score < 10) {
         g4difficulty = 2;
     }
-    else if (g4score > 30 && g4score < 60) {
+    else if (g4score > 10 && g4score < 15) {
         g4difficulty =3;
     }
-    else if (g4score >60 && g4score < 70) {
+    else if (g4score >15 && g4score < 30) {
         g4difficulty = 4;
     }
-    else if (g4score > 70 && g4score < 100) {
+    else if (g4score > 30 && g4score < 50) {
         g4difficulty =5;
     }
     
@@ -753,12 +671,14 @@ void Game4_mouseCallback(ObjectID object, int x, int y, MouseAction action) {
 
     if (object == g4startbutton) {
         playSound(buttonClickSound);
+        showObject(g4c1);
         g4gamestart();
         hideObject(g4startbutton);
     }
     else if (object == g4restartbutton) {
         playSound(buttonClickSound);
         g4gamerestart();
+        showObject(g4c1);
         hideObject(g4restartbutton);
     }
     else if (object == g4goMapButton) {
@@ -863,10 +783,9 @@ void Game4_main() {
     g4floor1 = g4createObject("image/game4/바닥.png", scene_g4, 0, 0, true);
     g4floor2 = g4createObject("image/game4/바닥.png", scene_g4, 2500, 0, true);
     
-    g4startbutton = g4createObject("image/game4/start.png", scene_g4, 500, 110, true);
-    g4restartbutton = g4createObject("image/game4/restart.png", scene_g4, 1000, 650, false);
-    scaleObject(g4startbutton, 0.5f);
-    scaleObject(g4restartbutton, 0.5f);
+    g4startbutton = g4createObject("image/game4/start.png", scene_g4, 520, 320, true);
+    g4restartbutton = g4createObject("image/game4/restart.png", scene_g4, 500, 330, false);
+ 
 
 
 	g4c1 = g4createObject("image/game4/마리오 애니메이션1.png", scene_g4, 210, 110, true);
@@ -885,7 +804,7 @@ void Game4_main() {
     }*/
     
     g4goMapButton = g4createObject("image/game6/goMap.png", scene_g4, 20, 20, true);
-    g4clear = g4createObject("image/game4/클리어.png", scene_g4, 280, 250, false);
+    g4clear = g4createObject("image/game4/클리어.png", scene_g4, 300, 350, false);
     scaleObject(g4clear, 0.5f);
 
 	g4timer1 = createTimer(0.05f);
