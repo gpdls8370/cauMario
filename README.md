@@ -1,4 +1,4 @@
-Group3 김동영 박혜인 안수겸
+Group3 김동영, 박혜인, 안수겸
 
 게임 소개 영상 https://www.youtube.com/watch?v=nI57uGy2v6o&feature=youtu.be
 
