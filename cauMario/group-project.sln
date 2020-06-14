@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "group-project", "group-project.vcxproj", "{3B8F69EF-DD6D-4EBB-B0FD-AA4DC0546876}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "cauMario_Installer", "..\cauMario_Installer\cauMario_Installer.vdproj", "{2E9C2D22-8B98-42FC-953A-400821D1D27E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B8F69EF-DD6D-4EBB-B0FD-AA4DC0546876}.Debug|x64.ActiveCfg = Debug|x64
+		{3B8F69EF-DD6D-4EBB-B0FD-AA4DC0546876}.Debug|x64.Build.0 = Debug|x64
+		{3B8F69EF-DD6D-4EBB-B0FD-AA4DC0546876}.Debug|x86.ActiveCfg = Debug|Win32
+		{3B8F69EF-DD6D-4EBB-B0FD-AA4DC0546876}.Debug|x86.Build.0 = Debug|Win32
+		{3B8F69EF-DD6D-4EBB-B0FD-AA4DC0546876}.Release|x64.ActiveCfg = Release|x64
+		{3B8F69EF-DD6D-4EBB-B0FD-AA4DC0546876}.Release|x64.Build.0 = Release|x64
+		{3B8F69EF-DD6D-4EBB-B0FD-AA4DC0546876}.Release|x86.ActiveCfg = Release|Win32
+		{3B8F69EF-DD6D-4EBB-B0FD-AA4DC0546876}.Release|x86.Build.0 = Release|Win32
+		{2E9C2D22-8B98-42FC-953A-400821D1D27E}.Debug|x64.ActiveCfg = Debug
+		{2E9C2D22-8B98-42FC-953A-400821D1D27E}.Debug|x86.ActiveCfg = Debug
+		{2E9C2D22-8B98-42FC-953A-400821D1D27E}.Release|x64.ActiveCfg = Release
+		{2E9C2D22-8B98-42FC-953A-400821D1D27E}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB931BBA-F681-4E58-9558-ADD1D7D01259}
+	EndGlobalSection
+EndGlobal
