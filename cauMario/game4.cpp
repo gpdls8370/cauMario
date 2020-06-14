@@ -265,10 +265,10 @@ void g4flooranimation() {
         
     }
     else {
-        g4floor1x = g4floor1x -11 - 2 * g4difficulty;
-        g4floor2x = g4floor2x - 11 - 2 * g4difficulty;
-        g4howfar = g4howfar + 11 + 2 * g4difficulty;
-        g4score = g4howfar* 0.006;
+        g4floor1x = g4floor1x -11 -   g4difficulty;
+        g4floor2x = g4floor2x - 11 -   g4difficulty;
+        g4howfar = g4howfar + 11 +   g4difficulty;
+        g4score = g4howfar* 0.01;
     }
 
     
@@ -281,83 +281,67 @@ void g4scoremessage() {
 }
 
 void g4death() {
-    
-        for (int i = 0; i < 4; i++) {
-            if ((220 < (g4obj1x[i] + g4_obj1_size_width)) && ((210 + g4_character_size_width) > g4obj1x[i]) &&
-                (g4c1y < (g4obj1y[i] + g4_obj1_size_length)) && ((g4c1y + g4_character_size_length) > g4obj1y[i])){
-                stopTimer(g4timer1);
-                stopTimer(g4timer2);
-                stopTimer(g4obmove);
-                showMessage("dead");         
-                playSound(g1deadsound);
-                stopSound(g4theme);
-                g4scoremessage();
-                showObject(g4restartbutton);
-                showObject(g4goMapButton);
-                hideObject(g4c1);
-            }
-            if (g4score > 25) {
-                if (g4score > 25 && g4score < 35) {
-                    if ((500 < (g4obj2x[i] + g4_obj1_size_width)) && 1280 > g4obj2x[i])
-                    {
-                        if ((220 < (g4obj2x[i] + g4_obj2_size_width)) && (210 + g4_character_size_width > g4obj2x[i]) &&
-                            (g4c1y < (g4obj2y[i] + g4_obj2_size_length)) && (g4c1y + g4_character_size_length > g4obj2y[i])) {
-                            stopTimer(g4timer1);
-                            stopTimer(g4timer2);
-                            stopTimer(g4obmove);
-                            showMessage("dead");
-                            playSound(g1deadsound);
-                            stopSound(g4theme);
-                            g4scoremessage();
-                            showObject(g4restartbutton);
-                            showObject(g4goMapButton);
-                            hideObject(g4c1);
-                        }
-                    }
-                }
-                if ((220 < (g4obj2x[i] + g4_obj2_size_width)) && (210 + g4_character_size_width > g4obj2x[i]) &&
-                    (g4c1y < (g4obj2y[i] + g4_obj2_size_length)) && (g4c1y + g4_character_size_length > g4obj2y[i])) {
-                    stopTimer(g4timer1);
-                    stopTimer(g4timer2);
-                    stopTimer(g4obmove);
-                    showMessage("dead");
-                    playSound(g1deadsound);
-                    stopSound(g4theme);
-                    g4scoremessage();
-                    showObject(g4restartbutton);
-                    showObject(g4goMapButton);
-                    hideObject(g4c1);
-                }
-            }
-            if (g4score > 60) {
-                if ((220 < (g4obj3x[i] + g4_obj3_size_width)) && (210 + g4_character_size_width > g4obj3x[i]) &&
-                    (g4c1y < (g4obj3y[i] + g4_obj3_size_length)) && (g4c1y + g4_character_size_length > g4obj3y[i])) {
-                    stopTimer(g4timer1);
-                    stopTimer(g4timer2);
-                    stopTimer(g4obmove);
-                    showMessage("dead");
-                    playSound(g1deadsound);
-                    stopSound(g4theme);
-                    g4scoremessage();
-                    showObject(g4restartbutton);
-                    showObject(g4goMapButton);
-                    hideObject(g4c1);
-                }
-            }
-            if ((210 < (g4obj4x[i] + g4_obj4_size_width)) && (210 + g4_character_size_width > g4obj4x[i]) &&
-                (g4c1y < (g4obj4y[i] + g4_obj4_size_length)) && (g4c1y + g4_character_size_length > g4obj4y[i])) {
+
+    for (int i = 0; i < 4; i++) {
+        if ((220 < (g4obj1x[i] + g4_obj1_size_width)) && ((210 + g4_character_size_width) > g4obj1x[i]) &&
+            (g4c1y < (g4obj1y[i] + g4_obj1_size_length)) && ((g4c1y + g4_character_size_length) > g4obj1y[i])) {
+            stopTimer(g4timer1);
+            stopTimer(g4timer2);
+            stopTimer(g4obmove);
+            showMessage("dead");
+            playSound(g1deadsound);
+            stopSound(g4theme);
+            g4scoremessage();
+            showObject(g4restartbutton);
+            showObject(g4goMapButton);
+            hideObject(g4c1);
+        }
+
+        if ((220 < (g4obj2x[i] + g4_obj2_size_width)) && (210 + g4_character_size_width > g4obj2x[i]) &&
+            (g4c1y < (g4obj2y[i] + g4_obj2_size_length)) && (g4c1y + g4_character_size_length > g4obj2y[i])) {
+            stopTimer(g4timer1);
+            stopTimer(g4timer2);
+            stopTimer(g4obmove);
+            showMessage("dead");
+            playSound(g1deadsound);
+            stopSound(g4theme);
+            g4scoremessage();
+            showObject(g4restartbutton);
+            showObject(g4goMapButton);
+            //hideObject(g4c1);
+        }
+
+
+        if (g4score > 70) {
+            if ((220 < (g4obj3x[i] + g4_obj3_size_width)) && (210 + g4_character_size_width > g4obj3x[i]) &&
+                (g4c1y < (g4obj3y[i] + g4_obj3_size_length)) && (g4c1y + g4_character_size_length > g4obj3y[i])) {
                 stopTimer(g4timer1);
                 stopTimer(g4timer2);
                 stopTimer(g4obmove);
                 showMessage("dead");
                 playSound(g1deadsound);
+                stopSound(g4theme);
                 g4scoremessage();
                 showObject(g4restartbutton);
-                hideObject(g4c1);
-            }  
+                showObject(g4goMapButton);
+                //hideObject(g4c1);
+            }
         }
-    
+        if ((210 < (g4obj4x[i] + g4_obj4_size_width)) && (210 + g4_character_size_width > g4obj4x[i]) &&
+            (g4c1y < (g4obj4y[i] + g4_obj4_size_length)) && (g4c1y + g4_character_size_length > g4obj4y[i])) {
+            stopTimer(g4timer1);
+            stopTimer(g4timer2);
+            stopTimer(g4obmove);
+            showMessage("dead");
+            playSound(g1deadsound);
+            g4scoremessage();
+            showObject(g4restartbutton);
+            hideObject(g4c1);
+        }
+    }
 }
+    
+
 
 void g4jumpstate() {
     if (jump1_1xcache <= 0 && jump1_1xcache >= -100) {
@@ -440,14 +424,14 @@ void g4obstaclemove(ObjectID obstacle,SceneID scene,int movetype,int objID) {
            int num = rand();
            int rndvalue = num % 5;
            if (objID == 1 || objID == 2 || objID == 3) {
-               g4obj1x[objID] = g4obj1x[objID - 1] + 220+(500-g4difficulty *50)+rndvalue * 70;
+               g4obj1x[objID] = g4obj1x[objID - 1] + 250+(500-g4difficulty *30)+rndvalue * 70;
            }
            else if (objID == 0) {
-               g4obj1x[objID] = g4obj1x[3] + 220+ (500 - g4difficulty * 50)+rndvalue * 70;
+               g4obj1x[objID] = g4obj1x[3] + 250+ (500 - g4difficulty * 30)+rndvalue * 70;
            }
        }
        else {
-           g4obj1x[objID] = g4obj1x[objID] - 11- 2*g4difficulty;
+           g4obj1x[objID] = g4obj1x[objID] - 11- g4difficulty;
        }
     }
     if (movetype == 2) {
@@ -465,7 +449,7 @@ void g4obstaclemove(ObjectID obstacle,SceneID scene,int movetype,int objID) {
                 }
             }
             else {
-                g4obj2x[objID] = g4obj2x[objID] - 16 - 2 * g4difficulty;
+                g4obj2x[objID] = g4obj2x[objID] - 16 -  g4difficulty;
             }
         }
     }
@@ -505,13 +489,13 @@ void g4objselectshow() {
         }
 
         if (g4score > 25) {
-            if (g4score > 25 && g4score < 35) {
-                if ((500 < (g4obj2x[i] + g4_obj1_size_width)) && 1280 > g4obj2x[i])
+            if (g4score > 20 && g4score < 40) {
+                if ((0 < (g4obj2x[i] + g4_obj1_size_width)) && 1500 > g4obj2x[i])
                 {
                     hideObject(g4obj2[i]);
                 }
             }
-            if ((0 < (g4obj2x[i] + g4_obj1_size_width)) && 1280 > g4obj2x[i]) {
+            else if ((0 < (g4obj2x[i] + g4_obj1_size_width)) && 1280 > g4obj2x[i]) {
                 showObject(g4obj2[i]);
             }
             else {
@@ -522,7 +506,7 @@ void g4objselectshow() {
             hideObject(g4obj2[i]);
         }
 
-        if (g4score > 60) {
+        if (g4score > 70) {
             if ((0 < (g4obj3x[i] + g4_obj1_size_width)) && 1280 > g4obj3x[i]) {
                 showObject(g4obj3[i]);
             }
@@ -539,7 +523,7 @@ void g4objselectshow() {
 }
 
 void g4stageclear() {
-    if (g4score >= 70) {
+    if (g4score >= 100) {
         showObject(g4clear);
         stopSound(g4theme);
         playSound(g4clearsound);
@@ -571,8 +555,8 @@ void g4update() {
     g4obj3animation();
     g4flooranimation();
     g4death();
-   g4stageclear();
-   g4objselectshow();
+    g4stageclear();
+    g4objselectshow();
     //-------좌표이동
     for (int i = 0; i < 4; i++) {
         g4obstaclemove(g4obj1[i], scene_g4, 1, i);
@@ -641,7 +625,7 @@ void g4gamestart() {
         //srand((unsigned int)time(NULL));
         int num = rand();
         int rndvalue = num % 5;
-        g4obj2x[i] = 1300 + 700 * i + rndvalue * 20;
+        g4obj2x[i] = 6000 + 700 * i + rndvalue * 20;
         g4obj2y[i] = 110;
         g4placeobstacle(g4obj2[i], scene_g4, g4obj2x[i], g4obj2y[i], true);
     }
@@ -749,7 +733,7 @@ void Game4_keyboardCallback(KeyCode code, KeyState state)
                         g4jumping1_1 = true;
                     }
                     else if (g4jumping1_1 == true) {
-                        if (g4jump1_1front == false) {//1단점프 앞부분에서 점프 금지
+                        //if (g4jump1_1front == false) {//1단점프 앞부분에서 점프 금지
                             if (g4jump2ban == false) {//2단 점프후 점프 금지
                                 if (g4jump2_1back == false) {
 
@@ -763,7 +747,7 @@ void Game4_keyboardCallback(KeyCode code, KeyState state)
                                     }
                                 }
                             }
-                        }
+                        //}
                     }
                 
 
