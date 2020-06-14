@@ -1,3 +1,5 @@
+Group3 김동영 박혜인 안수겸
+
 게임 소개 영상 https://www.youtube.com/watch?v=nI57uGy2v6o&feature=youtu.be
 
 쿠파성에 갇힌 피치공주를 구하기 위해 마리오가 모험을 떠나는 게임입니다.
