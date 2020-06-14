@@ -22,7 +22,7 @@ int IconX[6] = { 30,22,570,560,1050,1170 };
 int IconY[6] = { 115,385,215,565,275,465 };
 
 bool stageLocked[6] = { 0,1,0,1,1,1 };
-bool stageBlack[6] = { 0,0,0,0,0,0 };		//0,0,1,1,1,0
+bool stageBlack[6] = { 0,0,1,1,1,0 };		//0,0,1,1,1,0
 int stageUnlockCost[6] = { 0, 30, 0,30,150,0 };	//6번째 : 열쇠 2개 필요
 int coin; //점수  코인개수
 int key;
