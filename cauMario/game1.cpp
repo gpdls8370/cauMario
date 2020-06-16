@@ -407,6 +407,7 @@ void g1death() {
 				score();
 				//savedata_g1();
 				showObject(g1restartbutton);
+				showObject(g1goMapButton);
 			}
 			
 		}
@@ -422,6 +423,7 @@ void g1death() {
 			score();
 			//savedata_g1();
 			showObject(g1restartbutton);
+			showObject(g1goMapButton);
 		}
 	}
 }
@@ -468,6 +470,7 @@ void Game1_mouseCallback(ObjectID object, int x, int y, MouseAction action) {
 			startTimer(g1timer1);
 			setTimer(g1difficult, 1.0f);
 			startTimer(g1difficult);
+			hideObject(g1goMapButton);
 			hideObject(g1startbutton);
 			hideObject(g1restartbutton);
 			///savedata_g1();
@@ -484,6 +487,7 @@ void Game1_mouseCallback(ObjectID object, int x, int y, MouseAction action) {
 			
 			playSound(buttonClickSound);
 			g1restart();
+			hideObject(g1goMapButton);
 			hideObject(g1restartbutton);
 			setTimer(g1score, 9999);
 			//showTimer(g1score);

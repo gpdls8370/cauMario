@@ -277,7 +277,14 @@ void Title_mouseCallback(ObjectID object, int x, int y, MouseAction action) {
 
 		else if (object == GameIcon[i] && stageBlack[i] == true) {
 			playSound(buttonClickSound);
-			showMessage("이전 스테이지를 클리어 해주세요");
+
+			if(i == 2|| i == 3){
+				showMessage("2 스테이지를 클리어 해주세요");
+			}
+			
+			else if (i == 4) {
+				showMessage("4 스테이지를 언락 해주세요");
+			}		
 		}
 	}
 
