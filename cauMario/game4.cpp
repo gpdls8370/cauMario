@@ -32,6 +32,7 @@ ObjectID g4c1, g4goMapButton,g4startbutton, g4restartbutton,g4obj1[4], g4obj2[4]
 TimerID g4timer1, g4timer2, g4obmove,g4difficult;
 SoundID g4theme, g4clearsound;
 extern SoundID g1deadsound;
+bool g4dead = false;
 
 const char* g4objfile[5] =
 { "image/game4/선인/선인 애니메이션 1.png" ,"image/game4/해골 거북이/1.png" ,"image/game4/하늘 거북이/하늘거북이 애니메이션 1.png" ,"image/game4/c5.png" ,"image/game4/c6.png"  };
@@ -288,6 +289,7 @@ void g4death() {
             stopTimer(g4timer1);
             stopTimer(g4timer2);
             stopTimer(g4obmove);
+            g4jump2ban = false;
             showMessage("dead");
             playSound(g1deadsound);
             stopSound(g4theme);
@@ -302,6 +304,7 @@ void g4death() {
             stopTimer(g4timer1);
             stopTimer(g4timer2);
             stopTimer(g4obmove);
+            g4jump2ban = false;
             showMessage("dead");
             playSound(g1deadsound);
             stopSound(g4theme);
@@ -312,12 +315,19 @@ void g4death() {
         }
 
 
-        if (g4score > 70) {
+        if (g4score > 50) {
             if ((220 < (g4obj3x[i] + g4_obj3_size_width)) && (210 + g4_character_size_width > g4obj3x[i]) &&
                 (g4c1y < (g4obj3y[i] + g4_obj3_size_length)) && (g4c1y + g4_character_size_length > g4obj3y[i])) {
                 stopTimer(g4timer1);
                 stopTimer(g4timer2);
                 stopTimer(g4obmove);
+                g4jump2ban = false;
+                g4jump1_1front =false;
+                g4jump1_1back = false;
+                g4jump2_1front = false;
+                g4jump2_1back = false;
+                g4jumping2_1 = false;
+                jump2_1xcache = -100;
                 showMessage("dead");
                 playSound(g1deadsound);
                 stopSound(g4theme);
@@ -327,17 +337,7 @@ void g4death() {
                 //hideObject(g4c1);
             }
         }
-        if ((210 < (g4obj4x[i] + g4_obj4_size_width)) && (210 + g4_character_size_width > g4obj4x[i]) &&
-            (g4c1y < (g4obj4y[i] + g4_obj4_size_length)) && (g4c1y + g4_character_size_length > g4obj4y[i])) {
-            stopTimer(g4timer1);
-            stopTimer(g4timer2);
-            stopTimer(g4obmove);
-            showMessage("dead");
-            playSound(g1deadsound);
-            g4scoremessage();
-            showObject(g4restartbutton);
-            hideObject(g4c1);
-        }
+        
     }
 }
     
@@ -370,7 +370,7 @@ void g4jumpstate() {
         g4jump1_1back = false;
         g4jump2_1front = false;
         g4jump2_1back = true;
-
+        
     }
 }
 
@@ -387,7 +387,10 @@ void g4jump1_1() {
     }
     g4c1ycache = -(jump1_1xcache * jump1_1xcache)/40+ 250;
     g4c1y = floor_y + g4c1ycache;
-
+    g4jump2ban = false;
+    if (g4jumping2_1 == true) {
+       g4jump2ban = true;
+    }
 }
 void g4jump2_1(double g4c1positiony) {
     double g4c1ycache;
@@ -397,6 +400,9 @@ void g4jump2_1(double g4c1positiony) {
         g4jumping2_1 = false;
         startTimer(g4timer1);
         stopTimer(g4timer2);
+       
+       g4jump2ban = false;
+        
     }
     else {
         jump2_1xcache = jump2_1xcache + 4;
@@ -506,9 +512,9 @@ void g4objselectshow() {
             hideObject(g4obj2[i]);
         }
 
-        if (g4score > 70) {
+        if (g4score > 50) {
             if ((0 < (g4obj3x[i] + g4_obj1_size_width)) && 1280 > g4obj3x[i]) {
-               // showObject(g4obj3[i]);
+               showObject(g4obj3[i]);
             }
             else {
                 hideObject(g4obj3[i]);
@@ -539,16 +545,10 @@ void g4stageclear() {
 }
 
 void g4update() {
+    
+    
     g4jumpstate();
-    if (g4jumping2_1 == true) {
-        g4jump2ban = true;
-    }
-    else {
-        if(g4c1y==110){
-            g4jump2ban = false;
-        }
-    }
-
+    
     g4c1animation();
     g4obj1animation();
     g4obj2animation();
@@ -642,6 +642,11 @@ void g4gamestart() {
     startTimer(g4obmove);
     startTimer(g4timer1);
     startTimer(g4difficult);
+    g4jump2ban = false;
+    g4jump1_1front = false;
+    g4jump1_1back = false;
+    g4jump2_1front = false;
+    g4jump2_1back = false;
 }
 
 void g4gamerestart() {
@@ -723,16 +728,16 @@ void Game4_soundCallback(SoundID sound) {
 }
 
 void Game4_keyboardCallback(KeyCode code, KeyState state)
-{
+ {
      if (code == 75) {			// 
         if (nowGameSceneNum == 4) {
             //g4jumping1_1 = (state == KeyState::KEYBOARD_PRESSED ? true : false);
-            if (state == KeyState::KEYBOARD_PRESSED) {//
+             if (state == KeyState::KEYBOARD_PRESSED) {//
                 
                     if (g4jumping1_1 == false) {
                         g4jumping1_1 = true;
                     }
-                    else if (g4jumping1_1 == true) {
+                      else if (g4jumping1_1 == true) {
                         //if (g4jump1_1front == false) {//1단점프 앞부분에서 점프 금지
                             if (g4jump2ban == false) {//2단 점프후 점프 금지
                                 if (g4jump2_1back == false) {
@@ -742,6 +747,7 @@ void Game4_keyboardCallback(KeyCode code, KeyState state)
                                         stopTimer(g4timer1);
                                         startTimer(g4timer2);
                                         g4jumping2_1 = true;
+                                        
                                     }
                                     else if (g4jumping2_1 == true) {
                                     }
