@@ -508,7 +508,7 @@ void g4objselectshow() {
 
         if (g4score > 70) {
             if ((0 < (g4obj3x[i] + g4_obj1_size_width)) && 1280 > g4obj3x[i]) {
-                showObject(g4obj3[i]);
+               // showObject(g4obj3[i]);
             }
             else {
                 hideObject(g4obj3[i]);
@@ -523,7 +523,7 @@ void g4objselectshow() {
 }
 
 void g4stageclear() {
-    if (g4score >= 100) {
+    if (g4score >= 70) {
         showObject(g4clear);
         stopSound(g4theme);
         playSound(g4clearsound);
@@ -600,10 +600,10 @@ void g4update() {
     else if (g4score > 10 && g4score < 15) {
         g4difficulty =3;
     }
-    else if (g4score >15 && g4score < 30) {
+    else if (g4score >15 && g4score < 20) {
         g4difficulty = 4;
     }
-    else if (g4score > 30 && g4score < 50) {
+    else if (g4score > 20 && g4score < 25) {
         g4difficulty =5;
     }
     
