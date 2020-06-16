@@ -554,7 +554,7 @@ void g4update() {
     g4obj2animation();
     g4obj3animation();
     g4flooranimation();
-    //g4death();
+    g4death();
     g4stageclear();
     g4objselectshow();
     //-------ÁÂÇ¥ÀÌµ¿
