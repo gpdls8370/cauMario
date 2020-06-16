@@ -554,7 +554,7 @@ void g4update() {
     g4obj2animation();
     g4obj3animation();
     g4flooranimation();
-    g4death();
+    //g4death();
     g4stageclear();
     g4objselectshow();
     //-------ÁÂÇ¥ÀÌµ¿
@@ -744,7 +744,9 @@ void Game4_keyboardCallback(KeyCode code, KeyState state)
 
                                     if (g4jumping2_1 == false) {
                                         g4jump2_1firstpositioncache = g4c1y;
-                                        jump1_1xcache = -jump1_1xcache;
+                                        if (jump1_1xcache < 0) {
+                                            jump1_1xcache = -jump1_1xcache;
+                                        }
                                         stopTimer(g4timer1);
                                         startTimer(g4timer2);
                                         g4jumping2_1 = true;
