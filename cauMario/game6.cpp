@@ -24,7 +24,7 @@ SoundID bgm_g6, countDownSound_g6, catchSound1_g6, catchSound2_g6, growUpSound_g
 
 extern void enterTitle(int clearScene);
 extern int nowGameSceneNum;
-int nowGame6Stage = 1;
+extern int nowGame6Stage;
 int playerX_g6 = 600, playerY_g6 = 350;
 int setMonsterX[MONSTER_NUMBER] = { 200,600,600,1000,  420,780,420,780 };
 int setMonsterY[MONSTER_NUMBER] = { 350,630,70,350,   480,480,200,200 };

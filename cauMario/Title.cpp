@@ -5,9 +5,7 @@
 #define MARIO_ANIMATION_TIME	0.1f
 
 
-
 extern SceneID scene_g1, scene1_g2, scene1_g3, scene_g4, scene_g5, scene_g6, scene_g62, scene_g63;
-
 extern SoundID buttonClickSound, gameClearSound, gameOverSound, gameEnterSound;
 extern SoundID bgm_g3, g4theme, bgm_g2, bgm_g1, bgm_g5, bgm_g6;
 
@@ -31,7 +29,7 @@ int coinNum100, coinNum10, coinNum1;
 
 int nowMarioOn = 0;
 int nowGameSceneNum = 0;	//0은 타이틀
-extern int nowGame6Stage;
+int nowGame6Stage = 1;
 extern bool stage2Clear, stage5Clear;
 
 char path[256];
@@ -47,7 +45,7 @@ extern ObjectID createObject(const char* name, SceneID scene, int x, int y, bool
 
 typedef struct {
 
-	int coin;         //HP
+	int coin;         
 
 	bool stageBlack[6];
 
@@ -59,13 +57,16 @@ typedef struct {
 
 	int key;
 
+	int nowGame6Stage;
+
 }SaveData_t;
 
 int savedata() {
+
 	SaveData_t Data = { coin,
 		stageBlack[0],stageBlack[1],stageBlack[2],stageBlack[3],stageBlack[4],stageBlack[5],
 		stageLocked[0],stageLocked[1],stageLocked[2],stageLocked[3],stageLocked[4],stageLocked[5],
-		stage2Clear,stage5Clear,key };
+		stage2Clear,stage5Clear,key, nowGame6Stage };
 	FILE* fp = fopen("c:savedata.dat", "wb");
 
 	if (fp == NULL) {
@@ -79,12 +80,10 @@ int savedata() {
 	fclose(fp);
 
 	return 0;
-
-
-
 }
 
 int readdata() {
+
 	SaveData_t Data;
 
 	FILE* fp = fopen("c:savedata.dat", "rb");
@@ -110,19 +109,13 @@ int readdata() {
 
 	key = Data.key;
 
-	//printf("HP=%d\nMP=%d\n소지금=%d\n경험치=%d\n",Data.HP, Data.MP, Data.Money, Data.Exp);
-
-
+	nowGame6Stage = Data.nowGame6Stage;
 
 	return 0;
-
-
-	//char buf[256];
-	//sprintf_s(buf, "최고 기록 %d", Data.highscore_g1, scene_g1);
-	//showMessage(buf);
 }
 
 void titleanimation() {
+
 	if (titleanimationx < 1300) {
 		titleanimationx = titleanimationx + 25;
 		locateObject(maintitle, titleScene, titleanimationx, 0);
@@ -499,6 +492,7 @@ void Title_soundCallback(SoundID sound) {
 
 
 void Title_main() {
+
 	readdata();
 	titleScene = createScene("전체 맵", "image/Title/worldmap.png");
 
@@ -547,22 +541,11 @@ void Title_main() {
 
 	if (stage2Clear == true) {
 		enterTitle(2);
-		//setObjectImage(GameIcon[1], "image/Title/초록아이콘.png");
-		//setObjectImage(GameIcon[2], "image/Title/파란아이콘.png");
-		//setObjectImage(GameIcon[3], "image/Title/파란아이콘.png");
-		//stageBlack[2] = false;
-		//stageBlack[3] = false;
-
-		//key = 1;
-		//setObjectImage(key1, "image/Title/key.png");
 	}
 
 	//하늘지대 클리어했으면
 	else if (stage5Clear == true) {
-		//setObjectImage(GameIcon[4], "image/Title/초록아이콘.png");
 		enterTitle(5);
-		//key = 2;
-		//setObjectImage(key2, "image/Title/key.png");
 	}
 
 	for (int i = 0; i < 6; i++) {
@@ -583,9 +566,7 @@ void Title_main() {
 					locateObject(GameEnterButton[i], titleScene, 70, 100);
 			}
 		}
-
 	}
-
 
 
 	maintitle = createObject("image/Title/title.png", titleScene, 0, 0, true, 1.0f);

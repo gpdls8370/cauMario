@@ -10,7 +10,7 @@
 #define ENDmonster3_STATE			3	//마지막 몬스터 레벨(게임 끝나는 레벨)
 #define PLAYER_IMAGE_SIZE			100
 #define monster3_IMAGE_SIZE			100
-#define GAP							10
+#define GAP							13
 
 extern SceneID titleScene;
 SceneID scene_g63;
