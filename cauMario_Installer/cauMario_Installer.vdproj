@@ -201,12 +201,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_1A851C1EEBD595B1C5BA15F47608CAA2"
-        "OwnerKey" = "8:_2CB48FC950C04FEBA2F4D1DC46B6F684"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_1AA4856ECB79482F8B3E63AB23404581"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -346,12 +340,6 @@
         "Entry"
         {
         "MsmKey" = "8:_2C555C4A9CC541F28C123B70B364803E"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_2CB48FC950C04FEBA2F4D1DC46B6F684"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -555,6 +543,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_482EBD644CAD4FCDAECC46C81F08948C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_48858096F322473A95F82C59FA77B7F0"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -611,12 +605,6 @@
         {
         "MsmKey" = "8:_4FE08686857B42469E69FD0D50CEB946"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_522F6EEC37C9076CA0647AA3F22F6E63"
-        "OwnerKey" = "8:_2CB48FC950C04FEBA2F4D1DC46B6F684"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -909,12 +897,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_7833AEC2B844C4FFCA06427B84FA4500"
-        "OwnerKey" = "8:_2CB48FC950C04FEBA2F4D1DC46B6F684"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_78714D528240453A93C36C8500B2AF02"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -959,12 +941,6 @@
         {
         "MsmKey" = "8:_7D2786800C2448F79332DD190BFB3665"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_7F4A960FF66CF982C4CCC54E871532DD"
-        "OwnerKey" = "8:_2CB48FC950C04FEBA2F4D1DC46B6F684"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1269,12 +1245,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_AB12BD0D9CDAD5C5EBB35569EAB29727"
-        "OwnerKey" = "8:_2CB48FC950C04FEBA2F4D1DC46B6F684"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_ABECA151DD0C463B8B6D09AC34833EC9"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -1319,12 +1289,6 @@
         {
         "MsmKey" = "8:_B0BCF7903F1747FB83E4C2566FAF3138"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_B10FE1D918657F8D534D3C4596B3AC06"
-        "OwnerKey" = "8:_2CB48FC950C04FEBA2F4D1DC46B6F684"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1415,12 +1379,6 @@
         {
         "MsmKey" = "8:_BCA5BF917958463CA9156BE74DC53452"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_BCC20012F135A504111DE56E6842937B"
-        "OwnerKey" = "8:_2CB48FC950C04FEBA2F4D1DC46B6F684"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1755,12 +1713,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_E7D7BE9BFA91BF5B22EB8B4AE255B1C8"
-        "OwnerKey" = "8:_2CB48FC950C04FEBA2F4D1DC46B6F684"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_E895E9E851854CE9BA48DD1E39FC18C6"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -1857,12 +1809,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_F984D717DA1C75E66FAAD7B06B17BA0B"
-        "OwnerKey" = "8:_2CB48FC950C04FEBA2F4D1DC46B6F684"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_FA0499F427F946EBB99E54E105DDA09E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -1921,6 +1867,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -1937,6 +1891,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -2576,26 +2546,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1A851C1EEBD595B1C5BA15F47608CAA2"
-            {
-            "SourcePath" = "8:api-ms-win-crt-runtime-l1-1-0.dll"
-            "TargetName" = "8:api-ms-win-crt-runtime-l1-1-0.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_AD7863F4F7FA48B8A9C85EFA4F74C85C"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1AA4856ECB79482F8B3E63AB23404581"
@@ -3938,26 +3888,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_522F6EEC37C9076CA0647AA3F22F6E63"
-            {
-            "SourcePath" = "8:VCRUNTIME140.dll"
-            "TargetName" = "8:VCRUNTIME140.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_AD7863F4F7FA48B8A9C85EFA4F74C85C"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_52B73CAD99504E6CA39B7B742EDA08F4"
             {
             "SourcePath" = "8:..\\cauMario\\image\\game2\\normalHit2.mp3"
@@ -4918,26 +4848,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7833AEC2B844C4FFCA06427B84FA4500"
-            {
-            "SourcePath" = "8:api-ms-win-crt-utility-l1-1-0.dll"
-            "TargetName" = "8:api-ms-win-crt-utility-l1-1-0.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_AD7863F4F7FA48B8A9C85EFA4F74C85C"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_78714D528240453A93C36C8500B2AF02"
             {
             "SourcePath" = "8:..\\cauMario\\sounds\\game6\\정답1.mp3"
@@ -5096,26 +5006,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7F4A960FF66CF982C4CCC54E871532DD"
-            {
-            "SourcePath" = "8:api-ms-win-crt-time-l1-1-0.dll"
-            "TargetName" = "8:api-ms-win-crt-time-l1-1-0.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_AD7863F4F7FA48B8A9C85EFA4F74C85C"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8044431970874518BDFDAB8AAF8534C9"
@@ -6118,26 +6008,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AB12BD0D9CDAD5C5EBB35569EAB29727"
-            {
-            "SourcePath" = "8:api-ms-win-crt-locale-l1-1-0.dll"
-            "TargetName" = "8:api-ms-win-crt-locale-l1-1-0.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_AD7863F4F7FA48B8A9C85EFA4F74C85C"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_ABECA151DD0C463B8B6D09AC34833EC9"
             {
             "SourcePath" = "8:..\\cauMario\\image\\game3\\finalHit.mp3"
@@ -6296,26 +6166,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B10FE1D918657F8D534D3C4596B3AC06"
-            {
-            "SourcePath" = "8:api-ms-win-crt-math-l1-1-0.dll"
-            "TargetName" = "8:api-ms-win-crt-math-l1-1-0.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_AD7863F4F7FA48B8A9C85EFA4F74C85C"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B3212EA3131F427EA8D92F6F3C3FE91D"
@@ -6616,26 +6466,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BCC20012F135A504111DE56E6842937B"
-            {
-            "SourcePath" = "8:api-ms-win-crt-stdio-l1-1-0.dll"
-            "TargetName" = "8:api-ms-win-crt-stdio-l1-1-0.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_AD7863F4F7FA48B8A9C85EFA4F74C85C"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BF7BE1203EAF4CA995D0B130D257D815"
@@ -7738,26 +7568,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E7D7BE9BFA91BF5B22EB8B4AE255B1C8"
-            {
-            "SourcePath" = "8:api-ms-win-crt-heap-l1-1-0.dll"
-            "TargetName" = "8:api-ms-win-crt-heap-l1-1-0.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_AD7863F4F7FA48B8A9C85EFA4F74C85C"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E895E9E851854CE9BA48DD1E39FC18C6"
             {
             "SourcePath" = "8:..\\cauMario\\image\\game4\\마리오\\마리오 애니메이션6.png"
@@ -8076,26 +7886,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F984D717DA1C75E66FAAD7B06B17BA0B"
-            {
-            "SourcePath" = "8:Bangtal.dll"
-            "TargetName" = "8:Bangtal.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_AD7863F4F7FA48B8A9C85EFA4F74C85C"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FA0499F427F946EBB99E54E105DDA09E"
@@ -8647,7 +8437,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:cauMario"
         "ProductCode" = "8:{E38F9E0E-9A0C-46DA-8195-227ACE671C47}"
-        "PackageCode" = "8:{565235CE-7D7E-42AF-8627-7E39847ED21C}"
+        "PackageCode" = "8:{9098891B-C454-451A-9D8F-4A9B5D0329CB}"
         "UpgradeCode" = "8:{22A2CD13-1FCD-496A-8BC5-9EB380713F3A}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -8767,7 +8557,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_1876F68B7A534A998423DB401F7FD98D"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_96D85B7C40E6412D9E67857879D6A374"
             {
             "Name" = "8:cauMario"
             "Arguments" = "8:"
@@ -8775,13 +8565,13 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_2CB48FC950C04FEBA2F4D1DC46B6F684"
-            "Folder" = "8:_AD82DD6694204B94BE7013217D1E8F53"
+            "Target" = "8:_482EBD644CAD4FCDAECC46C81F08948C"
+            "Folder" = "8:_190340834141496E97B15713329C8483"
             "WorkingFolder" = "8:_AD7863F4F7FA48B8A9C85EFA4F74C85C"
             "Icon" = "8:_EA57D888906B436FBEC6C610AB61D3D9"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_A507C87E9930496E96FDCDA182665F76"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_B67A2095F8324514BBCD894B38D73B42"
             {
             "Name" = "8:cauMario"
             "Arguments" = "8:"
@@ -8789,8 +8579,8 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_2CB48FC950C04FEBA2F4D1DC46B6F684"
-            "Folder" = "8:_190340834141496E97B15713329C8483"
+            "Target" = "8:_482EBD644CAD4FCDAECC46C81F08948C"
+            "Folder" = "8:_AD82DD6694204B94BE7013217D1E8F53"
             "WorkingFolder" = "8:_AD7863F4F7FA48B8A9C85EFA4F74C85C"
             "Icon" = "8:_EA57D888906B436FBEC6C610AB61D3D9"
             "Feature" = "8:"
@@ -9194,7 +8984,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_2CB48FC950C04FEBA2F4D1DC46B6F684"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_482EBD644CAD4FCDAECC46C81F08948C"
             {
             "SourcePath" = "8:..\\cauMario\\x64\\Release\\group-project.exe"
             "TargetName" = "8:"
