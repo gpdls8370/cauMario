@@ -349,28 +349,28 @@ void g4jumpstate() {
         g4jump1_1back = false;
         g4jump2_1front = false;
         g4jump2_1back = false;
-
+       
     }
     if (jump1_1xcache <= 100 && jump1_1xcache > 0) {
         g4jump1_1front = false;
         g4jump1_1back = true;
         g4jump2_1front = false;
         g4jump2_1back = false;
-
+        
     }
     if (jump2_1xcache <= 0 && jump2_1xcache > -100) {
         g4jump1_1front = false;
         g4jump1_1back = false;
         g4jump2_1front = true;
         g4jump2_1back = false;
-
+        
     }
     if (jump2_1xcache <= 100 &&jump2_1xcache > 0) {
         g4jump1_1front = false;
         g4jump1_1back = false;
         g4jump2_1front = false;
         g4jump2_1back = true;
-        
+       
     }
 }
 
@@ -381,16 +381,15 @@ void g4jump1_1() {
         jump1_1xcache = -100;
         g4c1y = floor_y;
         g4jumping1_1 = false;
+        g4jump2ban = false;
     }
     else {
         jump1_1xcache = jump1_1xcache +4;
     }
     g4c1ycache = -(jump1_1xcache * jump1_1xcache)/40+ 250;
     g4c1y = floor_y + g4c1ycache;
-    g4jump2ban = false;
-    if (g4jumping2_1 == true) {
-       g4jump2ban = true;
-    }
+    //g4jump2ban = false;
+   
 }
 void g4jump2_1(double g4c1positiony) {
     double g4c1ycache;
@@ -406,10 +405,11 @@ void g4jump2_1(double g4c1positiony) {
     }
     else {
         jump2_1xcache = jump2_1xcache + 4;
+
     }
     g4c1ycache = -(jump2_1xcache * jump2_1xcache) / 40 + 250;
     g4c1y = floor_y + g4c1positiony+ g4c1ycache;
-
+    g4jump2ban = true;
 }
 
 
@@ -545,7 +545,7 @@ void g4stageclear() {
 }
 
 void g4update() {
-    
+   
     
     g4jumpstate();
     
