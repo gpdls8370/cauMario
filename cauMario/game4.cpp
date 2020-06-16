@@ -744,6 +744,7 @@ void Game4_keyboardCallback(KeyCode code, KeyState state)
 
                                     if (g4jumping2_1 == false) {
                                         g4jump2_1firstpositioncache = g4c1y;
+                                        jump1_1xcache = -jump1_1xcache;
                                         stopTimer(g4timer1);
                                         startTimer(g4timer2);
                                         g4jumping2_1 = true;
