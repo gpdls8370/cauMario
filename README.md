@@ -1,6 +1,6 @@
 Group3 김동영, 박혜인, 안수겸
 
-게임 소개 영상 https://www.youtube.com/watch?v=nI57uGy2v6o&feature=youtu.be
+게임 소개 영상 https://youtu.be/IisWPZWi7sM
 
 # 카우마리오 (CAU Mario)
 (본 게임은 게임 "슈퍼마리오 브라더스"를 패러디하여 제작했습니다.)
