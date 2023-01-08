@@ -4,6 +4,12 @@ Group3 김동영, 박혜인, 안수겸
 
 <img src="https://user-images.githubusercontent.com/63185682/84972862-b7614680-b15a-11ea-9a16-aa1340b4e420.png" width="90%"></img>
 
+(방탈 라이브러리를 사용하여 개발한 프로젝트입니다.)
+
+방탈 라이브러리 https://bangtal.bosornd.com/
+
+라이브러리 예제 선정 페이지 https://bangtal.bosornd.com/docs/example-cauMario
+
 # 카우마리오 (CAU Mario)
 (본 게임은 게임 "슈퍼마리오 브라더스"를 패러디하여 제작했습니다.)
 
